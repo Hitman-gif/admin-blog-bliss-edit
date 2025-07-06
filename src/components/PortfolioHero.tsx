@@ -7,8 +7,13 @@ const PortfolioHero: React.FC = () => {
     <section className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center px-4">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
         <div className="mb-8 animate-scale-in">
-          <div className="w-32 h-32 mx-auto bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold mb-6 shadow-xl hover:scale-105 transition-transform duration-300">
-            S
+          {/* Profile Image - Replace the src with your image URL */}
+          <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full shadow-xl hover:scale-105 transition-transform duration-300">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+              alt="Shivasharanappa Profile"
+              className="w-full h-full object-cover"
+            />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4 animate-slide-in-right">
             SHIVASHARANAPPA
