@@ -1,13 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useState } from 'react';
+import { useAuth } from '../contexts/AuthContext';
+import { AuthProvider } from '../contexts/AuthContext';
+import { BlogProvider } from '../contexts/BlogContext';
+import LoginForm from '../components/LoginForm';
+import AdminHeader from '../components/AdminHeader';
+import AdminDashboard from '../components/AdminDashboard';
+
+const MainApp: React.FC = () => {
+  const { isAuthenticated } = useAuth();
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'discover'>('dashboard');
+
+  if (!isAuthenticated) {
+    return <LoginForm />;
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <AdminHeader activeTab={activeTab} onTabChange={setActiveTab} />
+      <main className="py-8">
+        {activeTab === 'dashboard' && <AdminDashboard />}
+        {activeTab === 'discover' && <AdminDashboard />}
+      </main>
+    </div>
+  );
+};
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <AuthProvider>
+      <BlogProvider>
+        <MainApp />
+      </BlogProvider>
+    </AuthProvider>
   );
 };
 
