@@ -1,38 +1,24 @@
 
-import React, { useState } from 'react';
-import { useAuth } from '../contexts/AuthContext';
-import { AuthProvider } from '../contexts/AuthContext';
-import { BlogProvider } from '../contexts/BlogContext';
-import LoginForm from '../components/LoginForm';
-import AdminHeader from '../components/AdminHeader';
-import AdminDashboard from '../components/AdminDashboard';
-
-const MainApp: React.FC = () => {
-  const { isAuthenticated } = useAuth();
-  const [activeTab, setActiveTab] = useState<'dashboard' | 'discover'>('dashboard');
-
-  if (!isAuthenticated) {
-    return <LoginForm />;
-  }
-
-  return (
-    <div className="min-h-screen bg-gray-50">
-      <AdminHeader activeTab={activeTab} onTabChange={setActiveTab} />
-      <main className="py-8">
-        {activeTab === 'dashboard' && <AdminDashboard />}
-        {activeTab === 'discover' && <AdminDashboard />}
-      </main>
-    </div>
-  );
-};
+import React from 'react';
+import PortfolioHero from '../components/PortfolioHero';
+import EducationSection from '../components/EducationSection';
+import SkillsSection from '../components/SkillsSection';
+import ExperienceSection from '../components/ExperienceSection';
+import ProjectsSection from '../components/ProjectsSection';
+import AchievementsSection from '../components/AchievementsSection';
+import ContactSection from '../components/ContactSection';
 
 const Index = () => {
   return (
-    <AuthProvider>
-      <BlogProvider>
-        <MainApp />
-      </BlogProvider>
-    </AuthProvider>
+    <div className="min-h-screen">
+      <PortfolioHero />
+      <EducationSection />
+      <SkillsSection />
+      <ExperienceSection />
+      <ProjectsSection />
+      <AchievementsSection />
+      <ContactSection />
+    </div>
   );
 };
 
