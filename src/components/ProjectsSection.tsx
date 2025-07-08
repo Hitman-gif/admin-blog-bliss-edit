@@ -1,32 +1,24 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code, Database, Gamepad2, Heart } from 'lucide-react';
+import { Code, Database, Heart } from 'lucide-react';
 
 const ProjectsSection: React.FC = () => {
   const projects = [
     {
-      title: "Wholesale Database Management",
+      title: "Wholesale Database Management System",
       icon: <Database className="w-6 h-6" />,
-      description: "A comprehensive database management system for wholesale operations with HTML frontend and SQL backend.",
-      details: "Wholesale system facilitates buying stocks from suppliers and selling to customers, acting as middleware. The management system ensures proper dealing and security of shop data.",
-      technologies: ["HTML", "SQL", "Database Management"],
+      description: "A comprehensive database management system for wholesale operations built with Java J2EE and MySQL.",
+      details: "Built using Java J2EE (MVC), MySQL, HTML, CSS, Bootstrap. Managed supplier/customer modules and handled secure inventory processing with complete CRUD operations.",
+      technologies: ["Java J2EE", "MySQL", "HTML", "CSS", "Bootstrap", "MVC Architecture"],
       color: "bg-blue-500"
     },
     {
-      title: "Helicopter Game",
-      icon: <Gamepad2 className="w-6 h-6" />,
-      description: "An interactive helicopter game developed using C/C++ programming with computer graphics.",
-      details: "Mini-project focused on developing a helicopter game using computer graphics concepts and OpenGL API with real-time rendering algorithms including ray tracing for photorealistic rendering.",
-      technologies: ["C", "C++", "OpenGL", "Computer Graphics", "Real-time Rendering"],
-      color: "bg-green-500"
-    },
-    {
-      title: "Multiple Disease Detection Prediction",
+      title: "Multiple Disease Detection (Major Project)",
       icon: <Heart className="w-6 h-6" />,
-      description: "Web-based disease prediction system that identifies various diseases by analyzing patient symptoms.",
-      details: "A comprehensive health prediction platform where users can register, input medical data, and receive disease predictions. Enables end users to predict chronic diseases based on symptoms analysis.",
-      technologies: ["Web Development", "Machine Learning", "Data Analysis", "Healthcare"],
+      description: "Web application to predict diseases based on symptoms entered by users using machine learning.",
+      details: "Full-stack implementation with Spring Boot and MySQL database. Web app to predict diseases based on symptoms entered by users with comprehensive user management and data analysis.",
+      technologies: ["Spring Boot", "MySQL", "Machine Learning", "Web Development", "Data Analysis"],
       color: "bg-red-500"
     }
   ];
@@ -36,10 +28,10 @@ const ProjectsSection: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Projects</h2>
-          <p className="text-xl text-gray-600">Some of my notable work and achievements</p>
+          <p className="text-xl text-gray-600">Key projects showcasing my technical expertise</p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card 
               key={index} 
@@ -68,6 +60,14 @@ const ProjectsSection: React.FC = () => {
               </CardContent>
             </Card>
           ))}
+          
+          <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 hover-scale animate-scale-in group h-full border-2 border-dashed border-gray-300 bg-gray-50" style={{ animationDelay: '0.4s' }}>
+            <CardContent className="flex flex-col items-center justify-center h-full text-center p-8">
+              <Code className="w-12 h-12 text-gray-400 mb-4" />
+              <h3 className="text-lg font-semibold text-gray-600 mb-2">More Projects Coming Soon</h3>
+              <p className="text-sm text-gray-500">GitHub links will be added once projects are documented and deployed.</p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>

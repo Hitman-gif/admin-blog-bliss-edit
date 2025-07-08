@@ -9,13 +9,13 @@ const EducationSection: React.FC = () => {
       institution: "Sambhram Institute of Technology",
       degree: "Bachelor of Technology in Computer Science Engineering",
       year: "2020-2024",
-      board: "Visvesvaraya Technological University",
-      grade: "CGPA: 7.08",
+      board: "Visvesvaraya Technological University (VTU)",
+      grade: "CGPA: 7.15",
       icon: <GraduationCap className="w-6 h-6" />
     },
     {
-      institution: "Hiremallur Ishwaran Pu Sci College, Dharwad",
-      degree: "Pre-University Education",
+      institution: "Hiremallur Ishwaran PU College, Dharwad",
+      degree: "Pre-University Education (Science)",
       year: "2020",
       board: "Department Of Pre-University Education, Karnataka",
       grade: "Percentage: 62.66%",
@@ -23,7 +23,7 @@ const EducationSection: React.FC = () => {
     },
     {
       institution: "Government High School",
-      degree: "Secondary Education",
+      degree: "Secondary School Leaving Certificate (SSLC)",
       year: "2018",
       board: "Karnataka State Examination and Assessment Board",
       grade: "Percentage: 73.66%",

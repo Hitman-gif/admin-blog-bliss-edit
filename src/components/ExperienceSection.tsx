@@ -6,37 +6,47 @@ import { Briefcase, Calendar, CheckCircle } from 'lucide-react';
 const ExperienceSection: React.FC = () => {
   const experiences = [
     {
-      company: "Nano Robotics and Embed Technologies",
-      period: "Aug 2023 - Sept 2023",
-      role: "Machine Learning Intern",
-      description: "Training and focus priority on learning & developing new skills and gaining deeper understanding of concepts through hands-on applications.",
+      company: "Angodigital Technologies Pvt. Ltd",
+      period: "Dec 2024 – Present",
+      role: "Automation Test Engineer",
+      description: "Building and maintaining automation test frameworks using Selenium and Cucumber in an Agile environment.",
       achievements: [
-        "Contributed to impactful projects",
-        "Gained hands-on experience in Machine Learning",
-        "Worked with Python libraries like NumPy, SciPy, and Scikit-learn",
-        "Implemented K-means Clustering in Python"
-      ]
-    },
-    {
-      company: "Aqmenz Automation Pvt. Ltd",
-      period: "Jul 2023 - Sept 2023",
-      role: "Full Stack Development Intern",
-      description: "Acquired valuable practical skills in data analysis, model implementation, and web application development.",
-      achievements: [
-        "Full Stack Web Development",
-        "End-to-end Application Development",
-        "Data analysis and model implementation"
+        "Built and maintained automation test frameworks using Selenium and Cucumber",
+        "Tested REST APIs and reported functional and UI defects in Agile environment",
+        "Collaborated with developers and product team for integration-level validations"
       ]
     },
     {
       company: "Global Quest Technologies",
-      period: "Jul 2024",
-      role: "Java and Python Developer",
-      description: "Java and Python Full Stack Web Development",
+      period: "Jun 2024 – Dec 2024",
+      role: "Java Full Stack Intern",
+      description: "Developed Java Spring Boot applications with comprehensive full-stack implementation.",
       achievements: [
-        "Full Stack Web Development with Java",
-        "Python application development",
-        "Backend and frontend integration"
+        "Developed Java Spring Boot applications with REST API support",
+        "Implemented MySQL-based persistence and user authentication modules",
+        "Participated in sprint reviews and integration testing"
+      ]
+    },
+    {
+      company: "Aqmenz Automation Pvt. Ltd",
+      period: "Jul 2023 – Sep 2023",
+      role: "Full Stack Web Development Intern",
+      description: "Gained comprehensive experience in full-stack web development with focus on responsive design.",
+      achievements: [
+        "Designed responsive UI using HTML, CSS, JavaScript",
+        "Implemented backend services in Java with MySQL",
+        "Full-stack web application development"
+      ]
+    },
+    {
+      company: "Nano Robotics & Embed Technologies",
+      period: "Aug 2023 – Sep 2023",
+      role: "Embedded Systems Intern",
+      description: "Explored hardware-software integration and embedded systems fundamentals.",
+      achievements: [
+        "Gained experience in hardware-software integration",
+        "Learned basic embedded systems concepts",
+        "Worked on IoT and automation projects"
       ]
     }
   ];
@@ -45,8 +55,8 @@ const ExperienceSection: React.FC = () => {
     <section className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Experience</h2>
-          <p className="text-xl text-gray-600">My professional journey and internships</p>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Professional Experience</h2>
+          <p className="text-xl text-gray-600">My journey in software development and testing</p>
         </div>
         
         <div className="space-y-8">

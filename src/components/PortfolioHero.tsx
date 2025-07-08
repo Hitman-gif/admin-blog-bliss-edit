@@ -19,7 +19,7 @@ const PortfolioHero: React.FC = () => {
             SHIVASHARANAPPA
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8">
-            Computer Science Engineer & Full Stack Developer
+            Java Full Stack Developer
           </p>
         </div>
         
@@ -39,7 +39,7 @@ const PortfolioHero: React.FC = () => {
             <span className="text-gray-700">+91-8660835220</span>
           </a>
           <a 
-            href="https://www.linkedin.com/in/shivasharan-sajjan-743b62279/" 
+            href="#" 
             className="flex items-center gap-2 bg-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover-scale"
             target="_blank"
             rel="noopener noreferrer"
@@ -50,13 +50,12 @@ const PortfolioHero: React.FC = () => {
         </div>
 
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl max-w-3xl mx-auto animate-slide-in-right">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Career Objective</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Professional Summary</h2>
           <p className="text-gray-600 leading-relaxed">
-            Looking forward to acquiring valuable job experience, making impact on assignments. 
-            Aiming to utilize my technical know-how and innovative problem-solving abilities in a 
-            dynamic environment. To reach my goal of securing a leadership role, I plan to better 
-            understand myself in the field with complete dedication and broaden my understanding 
-            by putting in effort and learning new technologies.
+            Results-driven Java Full Stack Developer with real-world experience in building scalable web applications 
+            and automation frameworks. Proficient in Java, Spring Boot, REST APIs, and full-stack technologies. 
+            Knowledgeable in Agile methodology, MVC architecture, and DevOps fundamentals. Combines strong backend 
+            logic with responsive frontend development and test automation skills.
           </p>
         </div>
       </div>

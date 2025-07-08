@@ -1,33 +1,45 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code, Wrench, Monitor, Users, Brain } from 'lucide-react';
+import { Code, Wrench, Monitor, Users, Database } from 'lucide-react';
 
 const SkillsSection: React.FC = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
       icon: <Code className="w-6 h-6" />,
-      skills: ["Java", "Python", "C", "HTML5", "CSS", "JavaScript", "PHP", "SQL", "MongoDB"],
+      skills: ["Java", "SQL", "JavaScript"],
       color: "bg-blue-500"
     },
     {
-      title: "Frameworks & Tools",
-      icon: <Wrench className="w-6 h-6" />,
-      skills: ["Bootstrap", "Visual Studio Code", "Git", "GitHub"],
+      title: "Frontend Technologies",
+      icon: <Monitor className="w-6 h-6" />,
+      skills: ["HTML", "CSS", "JavaScript", "Bootstrap"],
       color: "bg-green-500"
     },
     {
-      title: "Platforms & Testing",
-      icon: <Monitor className="w-6 h-6" />,
-      skills: ["Windows", "Manual Testing"],
+      title: "Backend & Frameworks",
+      icon: <Database className="w-6 h-6" />,
+      skills: ["Spring Boot", "J2EE", "Servlets", "JSP", "JDBC", "REST APIs"],
       color: "bg-purple-500"
     },
     {
-      title: "Soft Skills",
-      icon: <Users className="w-6 h-6" />,
-      skills: ["Team Player", "Time Management", "Problem Solving", "Creative Thinking"],
-      color: "bg-orange-500"
+      title: "Testing & Automation",
+      icon: <Wrench className="w-6 h-6" />,
+      skills: ["Selenium WebDriver", "Cucumber (BDD)", "API Testing", "Automation Testing", "POM"],
+      color: "bg-red-500"
+    },
+    {
+      title: "Tools & IDEs",
+      icon: <Wrench className="w-6 h-6" />,
+      skills: ["Eclipse", "VS Code", "Git", "GitHub", "MySQL Workbench", "Postman"],
+      color: "bg-indigo-500"
+    },
+    {
+      title: "Database & Methodologies",
+      icon: <Database className="w-6 h-6" />,
+      skills: ["MySQL", "MongoDB", "MVC", "Agile", "SDLC"],
+      color: "bg-teal-500"
     }
   ];
 
@@ -35,11 +47,11 @@ const SkillsSection: React.FC = () => {
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Skills & Expertise</h2>
-          <p className="text-xl text-gray-600">Technologies and capabilities I work with</p>
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+          <p className="text-xl text-gray-600">Technologies and tools I work with</p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <Card 
               key={index} 
